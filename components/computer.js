@@ -3,6 +3,8 @@ import * as THREE from 'three'
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
 import { loadGLTFModel } from '../lib/model'
 import { ComputerContainer, ComputerSpinner } from './computer-loader'
+import env from 'dotenv'
+env.config()
 
 function easeOutCirc(x) {
     return Math.sqrt(1 - Math.pow(x - 1, 4))
@@ -70,7 +72,7 @@ const Computer = () => {
             controls.autoRotate = true
             controls.target = target
 
-            loadGLTFModel(scene, '/computer.glb', {
+            loadGLTFModel(scene, process.env.NEXT_PUBLIC_URL, {
                 receiveShadow: false,
                 castShadow: false
             }).then((gltf) => {

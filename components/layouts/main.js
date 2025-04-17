@@ -6,26 +6,27 @@ import Footer from '../footer'
 import ComputerLoader from '../computer-loader'
 
 const LazyComputer = dynamic(() => import('../computer'), {
-  ssr: false,
-  loading: () => <ComputerLoader />
+    ssr: false,
+    loading: () => <ComputerLoader />
 })
 
 const Main = ({ children, router }) => {
-  return (
-    <Box as="main" pb={8}>
-     
+    return (
+        <Box as="main" pb={8}>
+            <Head>
+                <title>Phan Duc Sung</title>
+            </Head>
+            <NavBar path={router.asPath} />
 
-      <NavBar path={router.asPath} />
+            <Container maxW="container.md" pt={14}>
+                <LazyComputer />
 
-      <Container maxW="container.md" pt={14}>
-        <LazyComputer />
+                {children}
 
-        {children}
-
-        <Footer />
-      </Container>
-    </Box>
-  )
+                <Footer />
+            </Container>
+        </Box>
+    )
 }
 
 export default Main

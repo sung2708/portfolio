@@ -76,8 +76,9 @@ const Navbar = props => {
                     alignItems="center"
                     flexGrow={1}
                     mt={{ base: 4, md: 2 }}
-                ><LinkItem href="/" path={path}>
-                       About
+                >
+                    <LinkItem href="/" path={path}>
+                        About
                     </LinkItem>
                     <LinkItem href="/projects" path={path}>
                         Projects
@@ -85,6 +86,10 @@ const Navbar = props => {
                     <LinkItem href="/posts" path={path}>
                         Posts
                     </LinkItem>
+                    <LinkItem href="/certificates" path={path}>
+                        Certificates
+                    </LinkItem>
+
                     <LinkItem
                         target="_blank"
                         href="https://github.com/sung2708"
@@ -95,7 +100,7 @@ const Navbar = props => {
                         pl={2}
                     >
                         <IoLogoGithub />
-                        Source
+                        Github
                     </LinkItem>
                 </Stack>
 
@@ -120,8 +125,11 @@ const Navbar = props => {
                                 <MenuItem as={MenuLink} href="/posts">
                                     Posts
                                 </MenuItem>
+                                <MenuItem as={MenuLink} href="/certificates">
+                                    Certificates
+                                </MenuItem>
                                 <MenuItem as={Link} href="https://github.com/sung2708">
-                                    Git Hub
+                                    Github
                                     <IoLogoGithub />
                                 </MenuItem>
                             </MenuList>

@@ -90,7 +90,8 @@ const Home = () => (
                         href="https://www.tiktok.com/@dev_ui"
                         passHref
                         scroll={false}
-                        isExternal target="_blank"
+                        isExternal
+                        target="_blank"
                     >
                         dev_ui
                     </Link>{' '}
@@ -193,7 +194,7 @@ const Home = () => (
                         title="dev_ui"
                         thumbnail={thumbYouTube}
                     >
-                        My TikTok channel (&gt;341 followers) where I share
+                        My TikTok channel (&gt;350 followers) where I share
                     </GridItem>
                 </SimpleGrid>
             </Section>

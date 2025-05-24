@@ -16,6 +16,7 @@ import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { GridItem } from '../components/grid-item'
+import MyCVButton from '../components/MyCVButton'
 import {
   IoLogoFacebook,
   IoLogoGithub,
@@ -90,7 +91,7 @@ const Home = () => (
           intelligence. I also run a TikTok channel called{' '}
           <Link
             as={NextLink}
-            href="https://www.tiktok.com/@dev_ui"
+            href="https://www.tiktok.com/@thelazycode_r"
             passHref
             scroll={false}
             isExternal
@@ -101,17 +102,7 @@ const Home = () => (
           where I create content about programming and tech to help others on
           their learning journey.
         </Paragraph>
-        <Box align="center" my={4}>
-          <Button
-            as={NextLink}
-            href="/projects"
-            scroll={false}
-            rightIcon={<ChevronRightIcon />}
-            colorScheme="teal"
-          >
-            My Projects
-          </Button>
-        </Box>
+        <MyCVButton />
       </Section>
 
       <Section delay={0.3}>

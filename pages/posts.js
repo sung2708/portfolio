@@ -7,6 +7,7 @@ import nvim from '../public/images/posts/nvim.png'
 import tmux from '../public/images/posts/tmux.png'
 import leetcode from '../public/images/posts/leetcode.png'
 import Docker from '../public/images/posts/docker.jpeg'
+import docker_compose from '../public/images/posts/docker-compose.png'
 
 const Posts = () => (
   <Layout title="Posts">
@@ -17,12 +18,12 @@ const Posts = () => (
       <Section delay={0.3}>
         <SimpleGrid columns={[1, 2, 2]} gap={6}>
           <GridItem
-            title="Giới thiệu về vim/neovim"
+            title="Vim/Neovim Introduction"
             thumbnail={nvim}
             href="https://www.tiktok.com/@thelazycode_r/video/7480185148848278802"
           ></GridItem>
           <GridItem
-            title="Giới thiệu Tmux"
+            title="Tmux Introduction"
             thumbnail={tmux}
             href="https://www.tiktok.com/@thelazycode_r/video/7480965886996663559"
           ></GridItem>
@@ -40,6 +41,11 @@ const Posts = () => (
             title="Docker Introduction"
             thumbnail={Docker}
             href="https://www.tiktok.com/@thelazycode_r/video/7504866717999336712"
+          ></GridItem>
+          <GridItem
+            title="Docker compose Introduction"
+            thumbnail={docker_compose}
+            href="https://www.tiktok.com/@thelazycode_r/video/7511614640191851784"
           ></GridItem>
         </SimpleGrid>
       </Section>

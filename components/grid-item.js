@@ -41,7 +41,7 @@ export const ProjectGridItem = ({
       scroll={false}
       cursor="pointer"
     >
-      <Box position="relative" width="300px" height="300px" mx="auto" mb={3}>
+      <Box position="relative" width="230px" height="230px" mx="auto" mb={3}>
         <Image
           src={thumbnail}
           alt={title}
